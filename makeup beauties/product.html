@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Natural Makeup Beauties</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+  .navbar
+    {
+      background-color: #F8F8F8;
+      /*background-image: url("img/page.jpg");
+      height: 500px;*/
+      border: 0;
+      height: 40px;
+      padding: 14px 30px;
+    }
+    i
+    {
+      color: #B22222;
+    }
+    /*.container
+    {
+      background-image: url("img/page.jpg");
+      height: 500px;
+      width: 1350px;
+      background-color: #F8F8F8;
+    }*/
+  .topnav {
+  overflow: hidden;
+  background-color: #CD5C5C;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: left;
+  padding: 14px 30px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.topnav a:hover {
+  background-color: #B22222;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #B22222;
+  color: white;
+}
+.container
+{
+  height: 700px;
+  width: 1350px;
+  background-color: #E3735E;
+  /*width: 300px;*/
+  border: 1px solid black;
+}
+/*.container table{
+   padding: 10px 10px;
+}
+.container th,td{
+  color: white;
+  font-size:30px
+}*/
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 90px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: #A42A04;
+  color: white;
+}
+  </style>
+  <script>
+document.getElementById("myhome").onclick = myfunction () {
+        location.href = "index.html";
+    }
+    document.getElementById("myabout").onclick = myfunction () {
+        location.href = "about.html";
+    }
+     document.getElementById("myproduct").onclick = myfunction () {
+        location.href = "product.html";
+    }
+    document.getElementById("myservices").onclick = myfunction () {
+        location.href = "Services.html";
+    }
+    document.getElementById("mygallery").onclick = myfunction () {
+        location.href = "gallery.html";
+    }
+    
+    document.getElementById("mymakeup").onclick = myfunction () {
+        location.href = "makeup.html";
+    };
+</script>
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <img src="img/logo.jpg" height="30%" width="30%" align="left"><i style="font-size:20px">Natural<br>Makeup<br>Beauties</i>
+    </div> 
+    <div class="topnav">
+  <a href="index.html" id="myhome" onclick="myFunction()">Home</a>
+  <a href="about.html" id="myabout" onclick="myFunction()">About Us</a>
+  <a class="active" href="product.html" id="myproduct" onclick="myFunction()" onclick="myFunction()">Product</a>
+  <a href="makeup.html" id="mymakeup" onclick="myFunction()">Makeup</a>
+  <a href="services.html" id="myservices" onclick="myFunction()">Services</a>
+  <a href="gallery.html" id="mygallery" onclick="myFunction()">Gallery</a>
+  <a href="contact.html" id="mycontact" onclick="myFunction()">Contact Us</a>
+</div>
+  </div>
+</nav>
+<br>
+<br>
+<div class="container">
+  <div class="row">
+  <div class="column">
+    <img src="img/p.jpg" alt="Paris" width="300" height="300">
+  </div>
+  <div class="column">
+    <img src="img/p2.jpg" alt="Paris" width="300" height="300">
+  </div>
+  
+  
+</div>
+
+  
+<!-- <table align="center">
+  <br>
+  <br>
+  <h1 align="center">Products</h1>
+  <tr>
+    <th style="width:20%" style="height:20%"><img src="img/h2.jpg"></th>
+  </tr>
+  <tr>
+    <td>Natural Hina</td>
+  </tr>
+</table> -->
+</div>
+
+<!-- <div class="container">
+  <h3>Right Aligned Navbar</h3>
+  <p>The .navbar-right class is used to right-align navigation bar buttons.</p>
+</div> -->
+<footer>
+  <p>Author:________________<br>
+  <a href="mailto:hege@example.com">@example.com</a></p>
+</footer>
+</body>
+</html>

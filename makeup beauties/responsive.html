@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<style>
+	#header{
+		min-height: 100px;
+		background-color: white;
+	}
+
+	.navbar
+    {
+      background-color: #F8F8F8;
+      /*background-image: url("img/page.jpg");
+      height: 500px;*/
+      border: 0;
+      height: 40px;
+      padding: 14px 30px;
+    }
+    i
+    {
+      color: #B22222;
+    }
+    .topnav {
+  overflow: hidden;
+  background-color: #CD5C5C;
+  
+}
+    .topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: left;
+  padding: 14px 30px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.topnav a:hover {
+  background-color: #B22222;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #B22222;
+  color: white;
+}
+
+
+
+
+	#menu{
+		min-height: 40px;
+		background-color: white;
+	}
+	#body{
+		min-height: 400px;
+		margin-top: 3%;
+		background-color: black;
+	}
+	#footer{
+		min-height: 100px;
+		margin-top: 3%;
+		background-color: black;
+
+	}
+	#header, #menu, #body, #footer{
+		margin-left: 10%;
+		margin-right: 10%
+		box-shadow: 3px 5px 7px black;
+		border: 1px solid black;
+	}
+</style>
+<html>
+<head>
+	<title>Natural Makeup Beauties</title>
+
+</head>
+<body>
+<div id="header">
+	<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <img src="img/logo.jpg" height="8%" width="8%" align="left"><i style="font-size:20px">Natural<br>Makeup<br>Beauties</i>
+    </div> 
+    <div class="topnav">
+  <a class="active" href="index.html" id="myhome" onclick="myFunction()">Home</a>
+  <a href="about.html" id="myabout" onclick="myFunction()">About Us</a>
+  <a href="product.html" id="myproduct" onclick="myFunction()">Product</a>
+  <a href="makeup.html" id="mymakeup" onclick="myFunction()">Makeup</a>
+  <a href="services.html" id="myservices" onclick="myFunction()">Services</a>
+  <a href="gallery.html" id="mygallery" onclick="myFunction()">Gallery</a>
+  <a href="contact.html" id="mycontact" onclick="myFunction()">Contact Us</a>
+</div>
+  </div>
+</nav>
+</div>
+<div id="menu">
+	<center>MENU</center>
+</div>
+<div id="body">
+	<center>BODY</center>
+</div>
+<div id="footer">
+	<center>FOOTER</center>
+</div>
+</body>
+</html>

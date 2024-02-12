@@ -1,0 +1,607 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Natural Makeup Beauties</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+   * {box-sizing: border-box;}
+body {font-family: Verdana, sans-serif;}
+.mySlides {display: none;}
+img {vertical-align: middle;}
+
+/* Slideshow container */
+.slideshow-container {
+  max-width: 1500px;
+  /*height: 10px;
+      width: 1350px;*/
+  position: relative;
+  margin: auto;
+}
+
+/* Caption text */
+.text {
+  color: #f2f2f2;
+  font-size: 15px;
+  padding: 8px 12px;
+  position: absolute;
+  bottom: 8px;
+  width: 100%;
+  text-align: center;
+}
+
+/* Number text (1/3 etc) */
+/*.numbertext {
+  color: #f2f2f2;
+  font-size: 12px;
+  padding: 8px 12px;
+  position: absolute;
+  top: 0;
+}*/
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 50%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 1.5s;
+  animation-name: fade;
+  animation-duration: 1.5s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 300px) {
+  .text {font-size: 11px}
+}
+
+
+
+  .navbar
+    {
+      background-color: #F8F8F8;
+      /*background-image: url("img/page.jpg");
+      height: 500px;*/
+      border: 0;
+      height: 40px;
+      padding: 14px 30px;
+    }
+    i
+    {
+      color: #B22222;
+    }
+    
+    
+  .topnav {
+  overflow: hidden;
+  background-color: #CD5C5C;
+
+
+  
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: left;
+  padding: 14px 30px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.topnav a:hover {
+  background-color: #B22222;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #B22222;
+  color: white;
+}
+.hair h2
+{
+  color: #800020;
+}
+.hair th
+{
+  padding: 50px 50px;
+}
+/*.hair table
+{
+  padding: 50px 50px;
+}*/
+.button {
+  display: inline-block;
+  padding: 5px 5px;
+  font-size: 15px;
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: white;
+  background-color: #8B0000;
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 9px #999;
+}
+
+.button:hover {background-color: #8B0000}
+
+.button:active {
+  background-color: #8B0000;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+.gallery
+{
+  padding: 50px 50px;
+}
+.nails
+{
+  padding: 50px 50px;
+}
+
+
+/*form*/
+
+* {
+  box-sizing: border-box;
+}
+
+input[type=text], input[type=date], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  background-color: transparent;
+  color: white;
+  /*background-color: red;*/
+}
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: red;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: pink;
+}
+
+.contact {
+  border-radius: 5px;
+  /*background-color: #722F37;*/
+  background-image: url("img/bridal3.jpg");
+  background-repeat: no-repeat;
+  background-size: 2000px 1000px;
+  padding: 20px;
+
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+  
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+
+  }
+}
+.haristyle
+{
+  padding: 20px 20px
+}
+.haristyle img {
+  border-radius: 50%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.column {
+  float: left;
+  width: 33.33%;
+  padding: 5px;
+}
+
+/* Clearfix (clear floats) */
+.row::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.makeup th
+{
+    padding: 20px 20px;
+}
+.makeup img
+{
+    padding: 20px 20px;
+    align-content: center;
+}
+.nails img
+{
+   border-radius: 8px;
+}
+.contact label{
+  color: white;
+  size: 30px;
+}
+
+/*footer*/
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: #A42A04;
+  color: white;
+}
+
+  </style>
+  <script>
+document.getElementById("myhome").onclick = myfunction () {
+        location.href = "index.html";
+    }
+    document.getElementById("myabout").onclick = myfunction () {
+        location.href = "about.html";
+    }
+     document.getElementById("myproduct").onclick = myfunction () {
+        location.href = "product.html";
+    }
+    document.getElementById("myservices").onclick = myfunction () {
+        location.href = "Services.html";
+    }
+    document.getElementById("mygallery").onclick = myfunction () {
+        location.href = "gallery.html";
+    }
+    
+    document.getElementById("mymakeup").onclick = myfunction () {
+        location.href = "makeup.html";
+    };
+</script>
+</head>
+<body style="float: center">
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <img src="img/logo.jpg" height="25%" width="25%" align="left"><i style="font-size:20px">Natural<br>Makeup<br>Beauties</i>
+    </div> 
+    <div class="topnav">
+  <a class="active" href="index.html" id="myhome" onclick="myFunction()">Home</a>
+  <a href="about.html" id="myabout" onclick="myFunction()">About Us</a>
+  <a href="product.html" id="myproduct" onclick="myFunction()">Product</a>
+  <a href="makeup.html" id="mymakeup" onclick="myFunction()">Makeup</a>
+  <a href="services.html" id="myservices" onclick="myFunction()">Services</a>
+  <a href="gallery.html" id="mygallery" onclick="myFunction()">Gallery</a>
+  <a href="contact.html" id="mycontact" onclick="myFunction()">Contact</a>
+</div>
+  </div>
+</nav>
+<br>
+
+<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <!-- <div class="numbertext">1 / 3</div> -->
+  <img src="img/froun.jpg" width="1350px" height="500px">
+  <div class="text"><b>simple look</b></div>
+</div>
+
+<div class="mySlides fade">
+  <!-- <div class="numbertext">2 / 3</div> -->
+  <img src="img/Bridal4.jpg" width="1350px" height="500px">
+  <div class="text"><b>bridal look</b></div>
+</div>
+
+<div class="mySlides fade">
+  <!-- <div class="numbertext">3 / 3</div> -->
+  <img src="img/Bridal7.jpg" width="1350px" height="500px">
+  <div class="text"><b>simple wedding look</b></div>
+</div>
+
+</div>
+
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+
+<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+<br>
+
+
+<!-- Our Hair Treatments or facial -->
+<div class="hair">
+  <h2 align="center"><b><i><u>Our Hair Treatments</u></i></b></h2>
+  
+  <table>
+    <tr>
+      <th><a href="services.html"><img src="img/h1.jpg"></a></th>
+      <th><h2 align="center">Hair Spa</h2>
+
+<p align="center"><h3><i style="color: black"><b>An extensive hair spa process removes all dirt, pollutants and contaminants from the pores. Once your scalp is rid of such impurities, your hair growth gets a stimulus. Hair spa is a procedure that helps make hair strong, bouncy and shiny, while simultaneously dealing with dandruff, damaged hair, and hair fall control.
+
+If you used to have strong and healthy hair that is thinning fast, regular hair spa treatments can save your hair. Regular hair spas improve blood circulation in your scalp that in turn stimulates hair growth. It is recommended to go for hair spa treatments at least twice a month for visible results.</h3></b></i></p>
+</th>
+    </tr>
+  </table>
+  <br>
+  <h2 align="center"><b><i><u>Our Facial</i></u></b></h2>
+  <br>
+  <table>
+    
+    <tr>
+      
+      <th>
+
+<p align="center"><h3><i style="color: black"><b>An extensive hair spa process removes all dirt, pollutants and contaminants from the pores. Once your scalp is rid of such impurities, your hair growth gets a stimulus. Hair spa is a procedure that helps make hair strong, bouncy and shiny, while simultaneously dealing with dandruff, damaged hair, and hair fall control.
+
+If you used to have strong and healthy hair that is thinning fast, regular hair spa treatments can save your hair. Regular hair spas improve blood circulation in your scalp that in turn stimulates hair growth. It is recommended to go for hair spa treatments at least twice a month for visible results.</h3></b></i></p>
+</th>
+<th><a href="services.html"><img src="img/facial.jpg"></a></th>
+    </tr>
+    <tr>
+      
+      <td align="center"><a href="services.html" class="button">View our all hair treatments or facial</a></td>
+      <td></td>
+    </tr>
+  </table>
+  
+</div>
+<br>
+
+<!-- Our Gallery -->
+<div class="gallery" >
+  <h2 align="center"><b><i><u>Our Gallery</u></i></b></h2>
+  <br>
+  <table align="center">
+     
+    <tr>
+      <th style="width:20%" style="height:20%"><a href="gallery.html"><img src="img/makeup.jpg" height="100%" width="100%"></a></th>
+  <th style="width:20%" style="height:20%"><a href="gallery.html"><img src="img/party.jpg" height="100%" width="100%"></a></th>
+  <th style="width:20%" style="height:10%"><a href="gallery.html"><img src="img/simple3.jpg" height="100%" width="100%"></a></th>
+  <th style="width:20%" style="height:20%"><a href="gallery.html"><img src="img/page.jpg" height="100%" width="100%"></a></th>
+
+    </tr>
+    
+  </table>
+  <br>
+    <p align="center"><a href="gallery.html" class="button">View our all Gallery</a></p>
+</div>
+<br>
+<!-- hair styles -->
+
+<div class="haristyle" >
+  <h2 align="center"><b><i><u>Bridals Hair Styles</u></i></b></h2>
+  <br>
+  <div class="row">
+  <div class="column">
+    <a href="gallery.html"><img src="img/juda.jpg" alt="styles" width="300" height="300"></a>
+  </div>
+  <div class="column">
+    <a href="gallery.html"><img src="img/juda6.jpg" alt="styles" width="300" height="300"></a>
+  </div>
+  <div class="column">
+    <a href="gallery.html"><img src="img/juda4.jpg" alt="styles" width="300" height="300"></a>
+  </div>
+</div>
+   
+  <!-- <table align="center">
+     
+    <tr>
+      <th style="width:20%" style="height:20%"><img src="img/juda.jpg" height="100%" width="100%"></th>
+      <th style="width:20%" style="height:20%"><img src="img/juda1.jpg" height="100%" width="100%"></th>
+      <th style="width:20%" style="height:20%"><img src="img/juda2.jpg" height="100%" width="100%"></th>
+
+    </tr>
+    
+  </table> -->
+<br>
+ <!--  Our Makeups -->
+ <div class="makeup">
+  <h2 align="center"><b><i><u>Our Makeups</u></i></b></h2>
+  
+  <table>
+    <tr>
+      <th style="width:20%" style="height:20%"><h3><b>Some of the products used in Airbrush bridal makeup which will help to render that perfect look to your face are given below:</h3></b>
+     <ul>
+        <li>Primer.</li>
+        <li>Foundation.</li>
+        <li>Concealer.</li>
+        <li>Makeup sponge.</li>
+        <li>Mascara.</li>
+        <li>Highlighter.</li>
+        <li>Eyeliner.</li>
+        <li>Lipstick.</li>
+     </ul>
+</th>
+<th style="width:10%" style="height:20%" ><a href="makeup.html" ><img src="img/1.jpg" height="100%" width="100%"></a></th>
+    </tr>
+  </table>
+  </div>
+  <br>
+  <br>
+   <p align="center"><a href="makeup.html" class="button">View our all type makeups</a></p>
+ </div>
+ <br>
+ <!-- Beautyfull Nails Style for beautyfull girls -->
+ <div class="nails">
+   <h2 align="center"><b><i><u>Beautyfull Nails Style for beautyfull girls</u></i></b></h2>
+   <br>
+   <br>
+   <div class="row">
+  <div class="column">
+    <a href="gallery.html"><img src="img/nail.jpg" alt="Paris" width="300" height="300"></a>
+  </div>
+  <div class="column">
+    <a href="gallery.html"><img src="img/nail2.jpg" alt="Paris" width="300" height="300"></a>
+  </div>
+  <div class="column">
+    <a href="gallery.html"><img src="img/nail3.jpg" alt="Paris" width="300" height="300"></a>
+  </div>
+</div>
+</div>
+   <!-- <table align="center" border="1px solid black">
+     
+    <tr>
+      <th style="width:20%" style="height:10%"><img src="img/nail.jpg" height="20%" width="100%"></th>
+      <th style="width:20%" style="height:10%"><img src="img/nail2.jpg" height="100%" width="100%"></th>
+      <th style="width:20%" style="height:10%"><img src="img/nail3.jpg" height="40%" width="40%"></th>
+
+    </tr>
+    
+  </table> -->
+ </div>
+<br>
+
+ <!-- Contact Us -->
+ <div class="contact">
+   <h2 align="center"><b><i>Contact Us</i></b></h2>
+   <br>
+   <div align="right">
+    <form>
+      <div class="row">
+    <div class="col-25">
+      <label for="fname">First Name</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="lname">Last Name</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="email">Email Address</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="email" name="email" placeholder="Your email address">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="mobile">Phone Number</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="mobile" name="mobile" placeholder="Your mobile number">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="date">Date</label>
+    </div>
+    <div class="col-75">
+      <input type="date" id="date" name="date" >
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="subject">How can we help you?</label>
+    </div>
+    <div class="col-75">
+      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <input type="submit" value="Submit">
+  </div>   
+    </form>
+     
+   </div>
+
+ </div>
+
+
+ <!-- Footer -->
+ <footer>
+  <p>Author:________________<br>
+  <a href="mailto:hege@example.com">@example.com</a></p>
+</footer>
+
+
+</body>
+</html>
+

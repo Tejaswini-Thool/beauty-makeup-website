@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Natural Makeup Beauties</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <style>
+  .navbar
+    {
+     background-color: #F8F8F8;
+      /*background-image: url("img/page.jpg");
+      height: 500px;*/
+      border: 0;
+      height: 40px;
+      padding: 14px 30px;
+    }
+    i
+    {
+      color: #B22222;
+    }
+    /*.container
+    {
+      background-image: url("img/page.jpg");
+      height: 500px;
+      width: 1350px;
+      background-color: #F8F8F8;
+    }*/
+  .topnav {
+  overflow: hidden;
+  background-color: #CD5C5C;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: left;
+  padding: 14px 30px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.topnav a:hover {
+  background-color: #B22222;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #B22222;
+  color: white;
+}
+/*form
+*/
+* {
+  box-sizing: border-box;
+}
+
+input[type=text], input[type=date], select, textarea {
+  width: 100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  resize: vertical;
+  background-color: transparent;
+  color: white;
+}
+
+
+label {
+  padding: 12px 12px 12px 0;
+  display: inline-block;
+}
+
+input[type=submit] {
+  background-color: red;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  float: right;
+}
+
+input[type=submit]:hover {
+  background-color: pink;
+}
+
+.contact {
+  border-radius: 5px;
+  background-color: #FA5F55;
+  padding: 20px;
+
+}
+
+.col-25 {
+  float: left;
+  width: 25%;
+  margin-top: 6px;
+}
+
+.col-75 {
+  float: left;
+  width: 75%;
+  margin-top: 6px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+@media screen and (max-width: 600px) {
+  .col-25, .col-75, input[type=submit] {
+    width: 100%;
+    margin-top: 0;
+  }
+}
+/*.location{
+  background-color: #AA4A44;
+}*/
+.location th{
+  color: #770737;
+}
+.contact label{
+  color: white;
+  size: 30px;
+}
+.contact {
+  border-radius: 5px;
+  background-image: url("img/bridal3.jpg");
+  background-repeat: no-repeat;
+  background-size: 2000px 950px;
+  padding: 20px;
+
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.box {
+  float: left;
+  /*width: 33.33%;
+  padding: 50px;*/
+  width: 33.33%;
+  padding: 50px;
+  height: 400px;
+}
+
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+footer {
+  text-align: center;
+  padding: 3px;
+  background-color: #A42A04;
+  color: white;
+}
+  </style>
+  <script>
+document.getElementById("myhome").onclick = myfunction () {
+        location.href = "index.html";
+    }
+    document.getElementById("myabout").onclick = myfunction () {
+        location.href = "about.html";
+    }
+     document.getElementById("myproduct").onclick = myfunction () {
+        location.href = "product.html";
+    }
+    document.getElementById("myservices").onclick = myfunction () {
+        location.href = "Services.html";
+    }
+    document.getElementById("mygallery").onclick = myfunction () {
+        location.href = "gallery.html";
+    }
+    
+    document.getElementById("mymakeup").onclick = myfunction () {
+        location.href = "makeup.html";
+    };
+</script>
+</head>
+<body>
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <img src="img/logo.jpg" height="30%" width="30%" align="left"><i style="font-size:20px">Natural<br>Makeup<br>Beauties</i>
+    </div> 
+    <div class="topnav">
+  <a href="index.html" id="myhome" onclick="myFunction()">Home</a>
+  <a href="about.html" id="myabout" onclick="myFunction()">About Us</a>
+  <a href="product.html" id="myproduct" onclick="myFunction()" onclick="myFunction()">Product</a>
+  <a href="makeup.html" id="mymakeup" onclick="myFunction()">Makeup</a>
+  <a href="services.html" id="myservices" onclick="myFunction()">Services</a>
+  <a href="gallery.html" id="mygallery" onclick="myFunction()">Gallery</a>
+  <a class="active" href="contact.html" id="mycontact" onclick="myFunction()">Contact Us</a>
+</div>
+  </div>
+</nav>
+<br>
+<br>
+ <!-- Contact Us -->
+ <div class="contact">
+   <h2 align="center"><b><i>Contact Us</i></b></h2>
+   <br>
+   <div align="right">
+    <form action="conn.php" method="post">
+      <div class="row">
+    <div class="col-25">
+      <label for="fname">First Name</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="fname" name="firstname" placeholder="Your name..">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="lname">Last Name</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="email">Email Address</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="email" name="email" placeholder="Your email address">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="mobile">Phone Number</label>
+    </div>
+    <div class="col-75">
+      <input type="text" id="mobile" name="mobile" placeholder="Your mobile number">
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="date">Date</label>
+    </div>
+    <div class="col-75">
+      <input type="date" id="date" name="date" >
+    </div>
+  </div>
+  <div class="row">
+    <div class="col-25">
+      <label for="subject">How can we help you?</label>
+    </div>
+    <div class="col-75">
+      <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+    </div>
+  </div>
+  <br>
+  <div class="row">
+    <input type="submit" value="Submit">
+  </div>   
+    </form>
+     
+   </div>
+
+ </div>
+ <br>
+ <div class="location">
+  <div class="clearfix">
+  <div class="box" style="background-color: #C77F66 ">
+  <p><h1>Address</h1>
+       <h3>virsa munda sabhagurh, pdaval layout, subhash nagar, Nagpur, Maharashtra 440025</h3></p>
+  </div>
+  <div class="box" style="background-color:#E6AD80">
+  <p><h1>Time</h1>
+        <h3>Friday   11am–8pm<br>
+           Saturday  11am–8pm<br>
+           Sunday  11am–8pm<br>
+            Monday  11am–8pm<br>
+            Tuesday   11am–8pm<br>
+            Wednesday   11am–8pm<br>
+            Thursday  11am–8pm</h3></p>
+  </div>
+  <div class="box" style="background-color:#C77F66">
+  <p><h1>Contact</h1>
+       <h3>012345 67890</h3></p>
+  </div>
+</div>
+   <!-- <table>
+     <tr>
+       <th  style="width:20%" style="height:20%" align="center"><h1>Address</h1>
+       <h3>virsa munda sabhagurh, pdaval layout, subhash nagar, Nagpur, Maharashtra 440025</h3></th>
+       <th  style="width:20%" style="height:20%" align="center"><h1>Time</h1>
+        <h3>Friday   11am–8pm<br>
+           Saturday  11am–8pm<br>
+           Sunday  11am–8pm<br>
+            Monday  11am–8pm<br>
+            Tuesday   11am–8pm<br>
+            Wednesday   11am–8pm<br>
+            Thursday  11am–8pm</h3></th>
+       <th  style="width:20%" style="height:20%" align="center"><h1>Contact</h1>
+       <h3>012345 67890</h3></th>
+     </tr>
+    
+   </table> -->
+ </div>
+ <br>
+
+<!-- <div class="container">
+  <h3>Right Aligned Navbar</h3>
+  <p>The .navbar-right class is used to right-align navigation bar buttons.</p>
+</div> -->
+<footer>
+  <p>Author:________________<br>
+  <a href="mailto:hege@example.com">@example.com</a></p>
+</footer>
+
+</body>
+</html>
